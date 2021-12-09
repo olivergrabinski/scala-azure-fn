@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "direction": "in",
+      "methods": [ "get" ],
+      "route": "hello"
+    },
+    {
+      "type": "http",
+      "name": "$return",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "scala-az-fn.jar",
+  "entryPoint": "Function.run"
+}
