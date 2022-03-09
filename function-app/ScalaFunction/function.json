@@ -13,6 +13,6 @@
       "direction": "out"
     }
   ],
-  "scriptFile": "scala-az-fn.jar",
+  "scriptFile": "../scala-az-fn.jar",
   "entryPoint": "Function.run"
 }
