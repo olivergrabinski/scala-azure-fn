@@ -5,8 +5,8 @@ This repository is a simple example of a working Azure Function written in Scala
 
 ## How to run the Azure Function
 1. Install the [azure-functions-core-tools](https://github.com/Azure/azure-functions-core-tools).
-2. Build the app with `sbt assembly`
-3. Run your app locally `func host start --java`
+2. Build the app with `sbt assembly` at the root of the project.
+3. Run your app locally `func host start --java` from within the `function-app` folder.
 4. Deploy your app to Azure `func azure functionapp publish {function_app_name_in_Azure} --java`
 
 ## Notes
