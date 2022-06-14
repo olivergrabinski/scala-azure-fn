@@ -13,10 +13,11 @@ class Function:
           context: ExecutionContext): HttpResponseMessage =
     context.getLogger.info("Incoming HTTP request...")
     val name = Option(request.getQueryParameters.get("name"))
-    val message = name match {
-      case Some(x) => s"Hello, ${x}"
+
+    val message = name match
+      case Some(x) => s"Hello, $x"
       case None    => "Please pass a name in the query."
-    }
+
     request
       .createResponseBuilder(HttpStatus.OK)
       .body(message)
