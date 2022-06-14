@@ -2,4 +2,4 @@ project/target/
 target/
 .bsp
 .idea
-.jar
+*.jar
